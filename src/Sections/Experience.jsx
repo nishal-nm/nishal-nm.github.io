@@ -1,0 +1,36 @@
+import React from "react";
+import Work from "../components/Work";
+
+const Experience = () => {
+  return (
+    <section className="experience section">
+      <div className="section-inner shadow-sm rounded">
+        <h2 className="heading">Experience</h2>
+        <div className="content">
+          <Work
+            what="Internship"
+            where="ICFOSS, Trivandrum"
+            link="https://icfoss.in/"
+            during="2023"
+            content="My five-day Machine Learning through Python internship with ICFOSS, in 
+            association with FOSS Cell, MEA Engineering College, provided valuable insights 
+            into machine learning concepts and their implementation using Python. This experience 
+            strengthened my understanding of data analysis and machine learning algorithms."
+          />
+          <Work
+            what="Internship"
+            where="Techmaghi, Kochi"
+            link="https://techmaghi.com/"
+            during="2024"
+            content='During my five-day frontend Python web development internship at Techmaghi, 
+            I gained practical experience using Python and the Flask framework to build web 
+            applications. I also worked with SQLite databases and contributed to the development 
+            of a "Blog Web Application," enhancing my front-end development skills.'
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Experience;

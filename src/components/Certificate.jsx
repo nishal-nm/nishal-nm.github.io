@@ -1,0 +1,62 @@
+import React, { useState } from "react";
+
+function Certificate(props) {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setModalOpen(!isModalOpen);
+  };
+
+  return (
+    <>
+      <div className="item row">
+        <div className="col-md-4 col-12">
+          <img
+            className="img-fluid project-image rounded shadow"
+            src={"assets/images/certificates/" + props.img + ".jpeg"}
+            alt={props.title}
+            onClick={toggleModal}
+            style={{ cursor: "pointer" }} // Indicates the image is clickable
+          />
+        </div>
+        <div className="desc col-md-8 col-12">
+          <h3 className="title">{props.title}</h3>
+          <p className="mb-2">{props.content}</p>
+        </div>
+      </div>
+
+      {/* Modal for enlarged image */}
+      {isModalOpen && (
+        <div
+          className="modal"
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            backgroundColor: "rgba(0, 0, 0, 0.8)",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            zIndex: 1000,
+          }}
+          onClick={toggleModal} // Close modal when clicking outside the image
+        >
+          <img
+            src={"assets/images/certificates/" + props.img + ".jpeg"}
+            alt={props.title}
+            style={{
+              maxWidth: "90%",
+              maxHeight: "90%",
+              borderRadius: "8px",
+              boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.5)",
+            }}
+          />
+        </div>
+      )}
+    </>
+  );
+}
+
+export default Certificate;
