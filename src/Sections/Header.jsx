@@ -36,7 +36,7 @@ function Header() {
           <div className="col">
             <img
               className="profile-image img-fluid float-start rounded-circle"
-              src="/assets/images/profile.png"
+              src="assets/images/profile.png"
               alt="profile"
             />
             <div className="profile-content">
