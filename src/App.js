@@ -6,6 +6,7 @@ import Footer from "./Sections/Footer";
 import Header from "./Sections/Header";
 import Info from "./Sections/Info";
 import Languages from "./Sections/Languages";
+import Projects from "./Sections/Projects";
 import Qualifications from "./Sections/Qualifications";
 import Skills from "./Sections/Skills";
 
@@ -19,6 +20,7 @@ const App = () => {
             <About />
             <Experience />
             <Certifications />
+            <Projects />
           </div>
           <div className="secondary col-lg-4 col-12">
             <Info />
