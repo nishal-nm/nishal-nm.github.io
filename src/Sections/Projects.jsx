@@ -16,6 +16,15 @@ function Projects() {
                   to prevent interacting with already matched cards. This project 
                   demonstrates my skills in React.js and interactive web development."
           />
+          <Project
+            link="https://nishal-nm.github.io/quiz-game/"
+            download="https://github.com/nishal-nm/quiz-game/archive/refs/heads/main.zip"
+            title="Quiz Game - A Simple Timed Quiz Game"
+            desc="An engaging and interactive quiz game that challenges users 
+                  with a variety of topics. Features timed questions, immediate feedback, 
+                  score tracking, and a responsive design. Designed to test knowledge and 
+                  provide educational fun in a user-friendly interface."
+          />
           <a
             class="btn btn-cta-secondary"
             href="https://github.com/nishal-nm"

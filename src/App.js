@@ -1,14 +1,14 @@
 import React from "react";
-import About from "./Sections/About";
-import Certifications from "./Sections/Certifications";
-import Experience from "./Sections/Experience";
-import Footer from "./Sections/Footer";
-import Header from "./Sections/Header";
-import Info from "./Sections/Info";
-import Languages from "./Sections/Languages";
-import Projects from "./Sections/Projects";
-import Qualifications from "./Sections/Qualifications";
-import Skills from "./Sections/Skills";
+import About from "./sections/About";
+import Certifications from "./sections/Certifications";
+import Experience from "./sections/Experience";
+import Footer from "./sections/Footer";
+import Header from "./sections/Header";
+import Info from "./sections/Info";
+import Languages from "./sections/Languages";
+import Projects from "./sections/Projects";
+import Qualifications from "./sections/Qualifications";
+import Skills from "./sections/Skills";
 
 const App = () => {
   return (
