@@ -1,7 +1,7 @@
 import React from "react";
-import Certificate from "../components/Certificate";
+import Certificate from "./Certificate";
 
-const Certifications = () => {
+const CertificateList = () => {
   return (
     <section className="latest section">
       <div className="section-inner shadow-sm rounded">
@@ -34,4 +34,4 @@ const Certifications = () => {
   );
 };
 
-export default Certifications;
+export default CertificateList;

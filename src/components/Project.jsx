@@ -4,7 +4,7 @@ function Project(props) {
   return (
     <div class="item">
       <h3 class="title">
-        <a href={props.link} target="_blank">
+        <a href={props.link} target="_blank" rel="noreferrer">
           {props.title + " "}
         </a>
       </h3>
@@ -12,11 +12,11 @@ function Project(props) {
       <p>
         <a
           class="more-link"
-          href={props.download}
+          href={props.more}
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fas fa-external-link-alt"></i>Download Now
+          <i class="fas fa-external-link-alt"></i>Find out more
         </a>
       </p>
     </div>

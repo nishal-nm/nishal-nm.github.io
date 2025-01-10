@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 function Header() {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal
 
   // Initialize theme based on localStorage
   useEffect(() => {
@@ -15,7 +16,7 @@ function Header() {
   }, []);
 
   // Handle theme toggle
-  const handleDarkModeToggle = () => {
+  function handleDarkModeToggle() {
     setIsDarkMode((prevState) => {
       const newState = !prevState;
       if (newState) {
@@ -27,6 +28,24 @@ function Header() {
       }
       return newState;
     });
+  }
+
+  // Handle resume format selection and trigger download
+  function handleFormatSelection(format) {
+    setIsModalOpen(false); // Close modal after selection
+
+    // Trigger download by creating an invisible link and clicking it programmatically
+    const link = document.createElement("a");
+    link.href = resumeLinks[format];
+    link.download = `${format}_resume`; // Customize the download filename
+    link.click();
+  }
+
+  // Resume download links
+  const resumeLinks = {
+    pdf: "assets/pdf/resume.pdf",
+    ats: "assets/pdf/resume_ats.txt",
+    word: "assets/pdf/resume.docx",
   };
 
   return (
@@ -88,17 +107,58 @@ function Header() {
                 </label>
               </div>
             </div>
-            <a
+            <button
               className="btn btn-cta-primary"
-              href="assets/pdf/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              onClick={() => setIsModalOpen(true)} // Open the modal on click
             >
               <i className="fas fa-file-alt"></i> View Resume
-            </a>
+            </button>
           </div>
         </div>
       </div>
+
+      {/* Modal for format selection */}
+      {isModalOpen && (
+        <div className="modal-overlay">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title">Select Format</h5>
+              <button
+                type="button"
+                className="close-btn"
+                onClick={() => setIsModalOpen(false)} // Close modal
+              >
+                &times;
+              </button>
+            </div>
+            <div className="modal-body">
+              <p className="modal-description">
+                Please choose the format you would like to download:
+              </p>
+              <div className="button-group">
+                <button
+                  className="btn btn-primary"
+                  onClick={() => handleFormatSelection("pdf")}
+                >
+                  PDF
+                </button>
+                <button
+                  className="btn btn-secondary"
+                  onClick={() => handleFormatSelection("ats")}
+                >
+                  ATS
+                </button>
+                <button
+                  className="btn btn-info"
+                  onClick={() => handleFormatSelection("word")}
+                >
+                  Word
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </header>
   );
 }

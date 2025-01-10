@@ -1,7 +1,7 @@
 import React from "react";
-import Project from "../components/Project";
+import Project from "./Project";
 
-function Projects() {
+function ProjectList() {
   return (
     <section class="projects section">
       <div class="section-inner shadow-sm rounded">
@@ -9,7 +9,7 @@ function Projects() {
         <div class="content">
           <Project
             link="https://nishal-nm.github.io/memory-game/"
-            download="https://github.com/nishal-nm/memory-game/archive/refs/heads/main.zip"
+            more="https://github.com/nishal-nm/memory-game"
             title="Test Memory - A Memory Testing Card Game"
             desc="A fun React.js-based memory game where players match pairs 
                   of cards. It features smooth animations, responsive design, and logic 
@@ -18,7 +18,7 @@ function Projects() {
           />
           <Project
             link="https://nishal-nm.github.io/quiz-game/"
-            download="https://github.com/nishal-nm/quiz-game/archive/refs/heads/main.zip"
+            more="https://github.com/nishal-nm/quiz-game"
             title="Quiz Game - A Simple Timed Quiz Game"
             desc="An engaging and interactive quiz game that challenges users 
                   with a variety of topics. Features timed questions, immediate feedback, 
@@ -39,4 +39,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default ProjectList;

@@ -1,14 +1,15 @@
 import React from "react";
-import About from "./sections/About";
-import Certifications from "./sections/Certifications";
-import Experience from "./sections/Experience";
-import Footer from "./sections/Footer";
-import Header from "./sections/Header";
-import Info from "./sections/Info";
-import Languages from "./sections/Languages";
-import Projects from "./sections/Projects";
-import Qualifications from "./sections/Qualifications";
-import Skills from "./sections/Skills";
+import About from "./components/About";
+import CertificateList from "./components/CertificateList";
+import EducationList from "./components/EducationList";
+import ExperienceList from "./components/ExperienceList";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Info from "./components/Info";
+import LanguageList from "./components/LanguageList";
+import Personal from "./components/Personal";
+import ProjectList from "./components/ProjectList";
+import SkillList from "./components/SkillList";
 
 const App = () => {
   return (
@@ -18,15 +19,16 @@ const App = () => {
         <div className="row">
           <div className="primary col-lg-8 col-12">
             <About />
-            <Experience />
-            <Certifications />
-            <Projects />
+            <ExperienceList />
+            <CertificateList />
+            <ProjectList />
           </div>
           <div className="secondary col-lg-4 col-12">
             <Info />
-            <Skills />
-            <Qualifications />
-            <Languages />
+            <Personal />
+            <SkillList />
+            <EducationList />
+            <LanguageList />
           </div>
         </div>
       </div>

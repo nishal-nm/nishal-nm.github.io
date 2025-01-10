@@ -1,6 +1,6 @@
 import React from "react";
 
-function Speaks(props) {
+function Language(props) {
   // Convert the star rating into a number of full and half stars
   const fullStars = Math.floor(props.star); // Full stars (integer part)
   const halfStars = props.star % 1 >= 0.5 ? 1 : 0; // Half star if the decimal is 0.5 or greater
@@ -27,4 +27,4 @@ function Speaks(props) {
   );
 }
 
-export default Speaks;
+export default Language;

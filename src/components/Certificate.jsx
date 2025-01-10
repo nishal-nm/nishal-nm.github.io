@@ -22,6 +22,17 @@ function Certificate(props) {
         <div className="desc col-md-8 col-12">
           <h3 className="title">{props.title}</h3>
           <p className="mb-2">{props.content}</p>
+          <p>
+            <a
+              class="more-link"
+              href={"/assets/pdf/Certificates/" + props.img + ".pdf"}
+              target="_blank"
+              rel="noreferrer"
+              download
+            >
+              <i class="fas fa-external-link-alt"></i>Download
+            </a>
+          </p>
         </div>
       </div>
 

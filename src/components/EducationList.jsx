@@ -1,7 +1,7 @@
 import React from "react";
-import Education from "../components/Education";
+import Education from "./Education";
 
-const Qualifications = () => {
+const EducationList = () => {
   return (
     <aside className="education aside section">
       <div className="section-inner shadow-sm rounded">
@@ -14,8 +14,13 @@ const Qualifications = () => {
           />
           <Education
             qual="Higher Secondary"
-            school="Govt Higher Secondary School Tirurangadi"
+            school="GHSS Tirurangadi"
             year="2019-2021"
+          />
+          <Education
+            qual="High School"
+            school="Farook English Medium School"
+            year="2019"
           />
         </div>
       </div>
@@ -23,4 +28,4 @@ const Qualifications = () => {
   );
 };
 
-export default Qualifications;
+export default EducationList;

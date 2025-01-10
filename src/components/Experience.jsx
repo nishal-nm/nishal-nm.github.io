@@ -1,6 +1,6 @@
 import React from "react";
 
-function Work(props) {
+function Experience(props) {
   return (
     <div className="item">
       <h3 className="title">
@@ -17,4 +17,4 @@ function Work(props) {
   );
 }
 
-export default Work;
+export default Experience;

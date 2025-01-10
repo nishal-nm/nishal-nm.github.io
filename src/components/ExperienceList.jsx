@@ -1,13 +1,13 @@
 import React from "react";
-import Work from "../components/Work";
+import Experience from "./Experience";
 
-const Experience = () => {
+const ExperienceList = () => {
   return (
     <section className="experience section">
       <div className="section-inner shadow-sm rounded">
         <h2 className="heading">Experience</h2>
         <div className="content">
-          <Work
+          <Experience
             what="Internship"
             where="ICFOSS, Trivandrum"
             link="https://icfoss.in/"
@@ -17,7 +17,7 @@ const Experience = () => {
             into machine learning concepts and their implementation using Python. This experience 
             strengthened my understanding of data analysis and machine learning algorithms."
           />
-          <Work
+          <Experience
             what="Internship"
             where="Techmaghi, Kochi"
             link="https://techmaghi.com/"
@@ -33,4 +33,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default ExperienceList;

@@ -10,7 +10,7 @@ function Info() {
             <li>
               <i className={"fas fa-map-marker-alt"}></i>
               <span className="sr-only">Location:</span>
-              Malappuram, Kerala
+              Malappuram
             </li>
 
             <li>

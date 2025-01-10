@@ -1,7 +1,7 @@
 import React from "react";
-import Skill from "../components/Skill";
+import Skill from "./Skill";
 
-function Skills() {
+function SkillList() {
   return (
     <aside className="skills aside section">
       <div className="section-inner shadow-sm rounded">
@@ -21,16 +21,16 @@ function Skills() {
               tooltip="Advanced knowledge in HTML5 and CSS3, focusing on responsive design and modern layouts."
             />
             <Skill
+              name="React"
+              level="Advanced"
+              percent="90%"
+              tooltip="Proficient in React for building interactive, component-based user interfaces."
+            />
+            <Skill
               name="Bootstrap"
               level="Advanced"
               percent="85%"
               tooltip="Advanced Bootstrap skills for responsive, mobile-first web designs and pre-built components."
-            />
-            <Skill
-              name="React"
-              level="Pro"
-              percent="65%"
-              tooltip="Proficient in React for building interactive, component-based user interfaces."
             />
             <Skill
               name="Javascript & jQuery"
@@ -73,4 +73,4 @@ function Skills() {
   );
 }
 
-export default Skills;
+export default SkillList;

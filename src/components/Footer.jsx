@@ -6,7 +6,11 @@ function Footer() {
       <div className="container text-center">
         <small className="copyright">
           Designed by{" "}
-          <a href="http://www.linkedin.com/in/nishal-nm" target="_blank">
+          <a
+            href="http://www.linkedin.com/in/nishal-nm"
+            target="_blank"
+            rel="noreferrer"
+          >
             Nishal NM
           </a>{" "}
         </small>
