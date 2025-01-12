@@ -9,7 +9,7 @@ function Certificate(props) {
 
   return (
     <>
-      <div className="item row">
+      <div className="item row" id={props.img}>
         <div className="col-md-4 col-12">
           <img
             className="img-fluid project-image rounded shadow"
@@ -25,7 +25,7 @@ function Certificate(props) {
           <p>
             <a
               class="more-link"
-              href={"/assets/pdf/Certificates/" + props.img + ".pdf"}
+              href={"assets/pdf/certificates/" + props.img + ".pdf"}
               target="_blank"
               rel="noreferrer"
               download

@@ -8,9 +8,10 @@ function Education(props) {
         {props.qual}{" "}
         <span class="badge badge-theme right-align">
           <a
-            href={"/assets/pdf/Education/" + props.qual + ".pdf"}
+            href={"assets/pdf/certificates/" + props.qual + ".pdf"}
             target="_blank"
             rel="noreferrer"
+            download
           >
             View
           </a>

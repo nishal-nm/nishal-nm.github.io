@@ -19,6 +19,27 @@ function Skill(props) {
     }
   }, []); // Empty dependency array ensures this runs only once
 
+  function setLevel(percent) {
+    const number = parseInt(percent, 10);
+    let level = "Master";
+
+    if (number < 10) {
+      level = "Novice";
+    } else if (number < 30) {
+      level = "Beginner";
+    } else if (number < 50) {
+      level = "Intermediate";
+    } else if (number < 70) {
+      level = "Advanced";
+    } else if (number < 85) {
+      level = "Proficient";
+    } else if (number < 95) {
+      level = "Expert";
+    }
+
+    return level;
+  }
+
   return (
     <div className="item">
       <h3 className="level-title">
@@ -29,7 +50,7 @@ function Skill(props) {
           data-bs-placement="left"
           title={props.tooltip}
         >
-          <i className="fas fa-info-circle"></i> {props.level}
+          <i className="fas fa-info-circle"></i> {setLevel(props.percent)}
         </span>
       </h3>
       <div className="level-bar progress">

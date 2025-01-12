@@ -8,6 +8,7 @@ const ExperienceList = () => {
         <h2 className="heading">Experience</h2>
         <div className="content">
           <Experience
+            certificate="icfoss"
             what="Internship"
             where="ICFOSS, Trivandrum"
             link="https://icfoss.in/"
@@ -18,6 +19,7 @@ const ExperienceList = () => {
             strengthened my understanding of data analysis and machine learning algorithms."
           />
           <Experience
+            certificate="techmaghi"
             what="Internship"
             where="Techmaghi, Kochi"
             link="https://techmaghi.com/"

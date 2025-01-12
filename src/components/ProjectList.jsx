@@ -27,7 +27,7 @@ function ProjectList() {
           />
           <a
             class="btn btn-cta-secondary"
-            href="https://github.com/nishal-nm"
+            href="https://github.com/nishal-nm?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
           >
