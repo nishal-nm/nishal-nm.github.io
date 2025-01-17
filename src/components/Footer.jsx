@@ -1,4 +1,5 @@
 import React from "react";
+import myData from "../data/my-data";
 
 function Footer() {
   return (
@@ -6,12 +7,8 @@ function Footer() {
       <div className="container text-center">
         <small className="copyright">
           Designed by{" "}
-          <a
-            href="http://www.linkedin.com/in/nishal-nm"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Nishal NM
+          <a href={myData.linkedin} target="_blank" rel="noreferrer">
+            {myData.name}
           </a>{" "}
         </small>
       </div>

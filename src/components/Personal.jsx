@@ -1,4 +1,5 @@
 import React from "react";
+import myData from "../data/my-data";
 
 function Personal() {
   return (
@@ -13,23 +14,23 @@ function Personal() {
               </span>
               <span>
                 <br className="visible-sm visible-xs" />
-                Narimadakkal House <br />
-                Venniyur PO <br />
-                Tirurangadi <br />
-                Kerala - 676508
+                {myData.address.house} House <br />
+                {myData.address.po} PO <br />
+                {myData.address.city} <br />
+                {myData.address.state} - {myData.address.pincode}
               </span>
             </li>
             <li className="item">
               <span className="title">
                 <strong>Date Of Birth: </strong>
               </span>
-              <span>30-12-2003</span>
+              <span>{myData.dob}</span>
             </li>
             <li className="item">
               <span className="title">
                 <strong>Gender: </strong>
               </span>
-              <span>Male</span>
+              <span>{myData.gender}</span>
             </li>
           </ul>
         </div>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import resumeData from "../data/resume-data"; // Links to each resume format
 
 function ViewResume() {
   const [isSelectorOpen, setSelectorOpen] = useState(false); // State for modal
@@ -7,16 +8,9 @@ function ViewResume() {
   function handleFormatSelection(format) {
     setSelectorOpen(false); // Close modal after selection
 
-    // Resume download links
-    const resumeLinks = {
-      pdf: "assets/pdf/resume.pdf",
-      ats: "assets/pdf/resume_ats.txt",
-      word: "assets/pdf/resume.docx",
-    };
-
     // Trigger download by creating an invisible link and clicking it programmatically
     const link = document.createElement("a");
-    link.href = resumeLinks[format];
+    link.href = resumeData[format]; // Gets the corresponding link
     link.download = `resume_${format}`; // Customize the download filename
     link.click();
   }

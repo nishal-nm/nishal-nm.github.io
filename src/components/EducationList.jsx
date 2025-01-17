@@ -1,4 +1,5 @@
 import React from "react";
+import EducationData from "../data/education-data";
 import Education from "./Education";
 
 const EducationList = () => {
@@ -7,21 +8,16 @@ const EducationList = () => {
       <div className="section-inner shadow-sm rounded">
         <h2 className="heading">Education</h2>
         <div className="content">
-          <Education
-            qual="B.Tech Computer Science"
-            school="MEA Engineering College"
-            year="2021-2025"
-          />
-          <Education
-            qual="Higher Secondary"
-            school="GHSS Tirurangadi"
-            year="2019-2021"
-          />
-          <Education
-            qual="High School"
-            school="Farook English Medium School"
-            year="2019"
-          />
+          {EducationData.map((education) => {
+            return (
+              <Education
+                key={education.id}
+                qual={education.qual}
+                school={education.school}
+                year={education.year}
+              />
+            );
+          })}
         </div>
       </div>
     </aside>

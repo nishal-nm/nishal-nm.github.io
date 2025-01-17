@@ -1,4 +1,5 @@
 import React from "react";
+import experienceData from "../data/experience-data";
 import Experience from "./Experience";
 
 const ExperienceList = () => {
@@ -7,28 +8,19 @@ const ExperienceList = () => {
       <div className="section-inner shadow-sm rounded">
         <h2 className="heading">Experience</h2>
         <div className="content">
-          <Experience
-            certificate="icfoss"
-            what="Internship"
-            where="ICFOSS, Trivandrum"
-            link="https://icfoss.in/"
-            during="2023"
-            content="My five-day Machine Learning through Python internship with ICFOSS, in 
-            association with FOSS Cell, MEA Engineering College, provided valuable insights 
-            into machine learning concepts and their implementation using Python. This experience 
-            strengthened my understanding of data analysis and machine learning algorithms."
-          />
-          <Experience
-            certificate="techmaghi"
-            what="Internship"
-            where="Techmaghi, Kochi"
-            link="https://techmaghi.com/"
-            during="2024"
-            content='During my five-day frontend Python web development internship at Techmaghi, 
-            I gained practical experience using Python and the Flask framework to build web 
-            applications. I also worked with SQLite databases and contributed to the development 
-            of a "Blog Web Application," enhancing my front-end development skills.'
-          />
+          {experienceData.map((experience) => {
+            return (
+              <Experience
+                key={experience.id}
+                certificate={experience.certificate}
+                what={experience.what}
+                where={experience.where}
+                link={experience.link}
+                during={experience.during}
+                content={experience.content}
+              />
+            );
+          })}
         </div>
       </div>
     </section>

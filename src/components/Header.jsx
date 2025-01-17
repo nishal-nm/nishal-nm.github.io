@@ -1,4 +1,6 @@
+import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
+import myData from "../data/my-data";
 import ViewResume from "./ViewResume";
 
 function Header() {
@@ -31,22 +33,27 @@ function Header() {
   }
 
   return (
-    <header className="header">
+    <motion.header
+      className="header"
+      initial={{ y: -50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+    >
       <div className="container">
         <div className="row align-items-center">
           <div className="col">
             <img
               className="profile-image img-fluid float-start rounded-circle"
-              src="assets/images/profile.png"
+              src={"assets/images/" + myData.img}
               alt="profile"
             />
             <div className="profile-content">
-              <h1 className="name">Nishal NM</h1>
-              <h2 className="desc">Student Engineer</h2>
+              <h1 className="name">{myData.name}</h1>
+              <h2 className="desc">{myData.job}</h2>
               <ul className="social list-inline">
                 <li className="list-inline-item">
                   <a
-                    href="http://www.linkedin.com/in/nishal-nm"
+                    href={myData.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -55,7 +62,7 @@ function Header() {
                 </li>
                 <li className="list-inline-item">
                   <a
-                    href="https://github.com/nishal-nm"
+                    href={myData.github}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -64,7 +71,7 @@ function Header() {
                 </li>
                 <li className="list-inline-item">
                   <a
-                    href="https://www.facebook.com/ashikmalu.cpr"
+                    href={myData.facebook}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -93,7 +100,7 @@ function Header() {
           </div>
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 }
 

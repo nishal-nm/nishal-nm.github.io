@@ -1,4 +1,6 @@
 import React from "react";
+import myData from "../data/my-data";
+import ProjectData from "../data/project-data";
 import Project from "./Project";
 
 function ProjectList() {
@@ -7,27 +9,20 @@ function ProjectList() {
       <div class="section-inner shadow-sm rounded">
         <h2 class="heading">Projects</h2>
         <div class="content">
-          <Project
-            link="https://nishal-nm.github.io/memory-game/"
-            more="https://github.com/nishal-nm/memory-game"
-            title="Test Memory - A Memory Testing Card Game"
-            desc="A fun React.js-based memory game where players match pairs 
-                  of cards. It features smooth animations, responsive design, and logic 
-                  to prevent interacting with already matched cards. This project 
-                  demonstrates my skills in React.js and interactive web development."
-          />
-          <Project
-            link="https://nishal-nm.github.io/quiz-game/"
-            more="https://github.com/nishal-nm/quiz-game"
-            title="Quiz Game - A Simple Timed Quiz Game"
-            desc="An engaging and interactive quiz game that challenges users 
-                  with a variety of topics. Features timed questions, immediate feedback, 
-                  score tracking, and a responsive design. Designed to test knowledge and 
-                  provide educational fun in a user-friendly interface."
-          />
+          {ProjectData.map((project) => {
+            return (
+              <Project
+                key={project.id}
+                link={project.link}
+                more={project.more}
+                title={project.title}
+                desc={project.desc}
+              />
+            );
+          })}
           <a
             class="btn btn-cta-secondary"
-            href="https://github.com/nishal-nm?tab=repositories"
+            href={myData.github + "?tab=repositories"}
             target="_blank"
             rel="noopener noreferrer"
           >

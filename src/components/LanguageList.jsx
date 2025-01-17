@@ -1,4 +1,5 @@
 import React from "react";
+import LanguageData from "../data/language-data";
 import Language from "./Language";
 
 function LanguageList() {
@@ -8,10 +9,16 @@ function LanguageList() {
         <h2 className="heading">Languages</h2>
         <div className="content">
           <ul className="list-unstyled">
-            <Language lang="Malayalam" level="Native Speaker" star={5} />
-            <Language lang="English" level="Intermediate" star={3} />
-            <Language lang="Tamil" level="Conversational" star={2} />
-            <Language lang="Hindi" level="Conversational" star={1.5} />
+            {LanguageData.map((language) => {
+              return (
+                <Language
+                  key={language.id}
+                  lang={language.lang}
+                  level={language.level}
+                  star={language.star}
+                />
+              );
+            })}
           </ul>
         </div>
       </div>

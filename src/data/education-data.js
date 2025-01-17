@@ -1,0 +1,22 @@
+const EducationData = [
+  {
+    id: 1,
+    qual: "B.Tech Computer Science",
+    school: "MEA Engineering College",
+    year: "2021-2025",
+  },
+  {
+    id: 2,
+    qual: "Higher Secondary",
+    school: "GHSS Tirurangadi",
+    year: "2019-2021",
+  },
+  {
+    id: 3,
+    qual: "High School",
+    school: "Farook English Medium School",
+    year: "2019",
+  },
+];
+
+export default EducationData;

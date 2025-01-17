@@ -1,4 +1,5 @@
 import React from "react";
+import myData from "../data/my-data";
 
 function Info() {
   return (
@@ -10,21 +11,21 @@ function Info() {
             <li>
               <i className={"fas fa-map-marker-alt"}></i>
               <span className="sr-only">Location:</span>
-              Malappuram
+              {myData.location}
             </li>
 
             <li>
               <i className={"fas fa-envelope"}></i>
               <span className="sr-only">Email:</span>
-              <a href="mailto:nishalshalu17@gmail.com?subject=Inquiry">
-                nishalshalu17@gmail.com
+              <a href={"mailto:" + myData.email + "?subject=Inquiry"}>
+                {myData.email}
               </a>
             </li>
 
             <li>
               <i className={"fas fa-phone"}></i>
               <span className="sr-only">Phone:</span>
-              +91 6235544220
+              +91 {myData.phone}
             </li>
           </ul>
         </div>

@@ -5,7 +5,7 @@ function Experience(props) {
     <div className="item">
       <h3 className="title">
         <a href={"#" + props.certificate} className="certificate-link">
-          <i className="fas fa-certificate"></i> {/* Small certificate icon */}
+          <i className="fas fa-certificate"></i>
         </a>{" "}
         {props.what} -{" "}
         <span className="place">

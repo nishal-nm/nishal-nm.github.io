@@ -26,16 +26,13 @@ git commit -m "$commit_message"
 # Set branch to gh-pages
 git branch -M gh-pages
 
-# Prompt for the GitHub username
-read -p "Enter your GitHub username: " github_user
-
 # Prompt for the repository name
 read -p "Enter the repository name: " repo_name
 
 # Add remote repository
-if [ -n "$repo_name" ] && [ -n "$github_user" ]; then
-  git remote add origin https://github.com/$github_user/$repo_name.git
-  echo "Remote repository added: https://github.com/$github_user/$repo_name.git"
+if [ -n "$repo_name" ]; then
+  git remote add origin https://github.com/nishal-nm/$repo_name.git
+  echo "Remote repository added: https://github.com/nishal-nm/$repo_name.git"
 else
   echo "No remote repository added. Please check your inputs."
 fi

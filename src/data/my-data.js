@@ -1,0 +1,25 @@
+const myData = {
+  img: "nishalnm.png",
+  name: "Nishal NM",
+  job: "Student Engineer",
+  linkedin: "http://www.linkedin.com/in/nishal-nm",
+  github: "https://github.com/nishal-nm",
+  facebook: "https://www.facebook.com/ashikmalu.cpr",
+  about:
+    "I'm a Computer Science undergraduate with a passion for technology, especially in Python, web development, and database management. I love working on real-world projects and solving problems through code. In my free time, I enjoy exploring new technologies, learning new skills, and building things that make a difference. I'm always eager to grow and take on new challenges in the tech world.",
+  location: "Malappuram",
+  email: "nishalshalu17@gmail.com",
+  phone: 6235544220,
+  address: {
+    house: "Narimadakkal",
+    po: "Venniyur",
+    city: "Tirurangadi",
+    state: "Kerala",
+    pincode: 676508,
+  },
+  dob: "30-12-2003",
+  gender: "Male",
+  tech: "I am passionate about leveraging technology to solve problems, continuously improving my skills, and contributing to impactful projects through innovative and collaborative efforts.",
+};
+
+export default myData;

@@ -1,4 +1,6 @@
+import { motion } from "framer-motion";
 import React from "react";
+import Section from "./Section";
 import About from "./components/About";
 import CertificateList from "./components/CertificateList";
 import EducationList from "./components/EducationList";
@@ -16,21 +18,44 @@ const App = () => {
     <div>
       <Header />
       <div className="container sections-wrapper py-5">
-        <div className="row">
+        <motion.div
+          className="row"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+        >
           <div className="primary col-lg-8 col-12">
-            <About />
-            <ExperienceList />
-            <CertificateList />
-            <ProjectList />
+            <Section>
+              <About />
+            </Section>
+            <Section>
+              <ExperienceList />
+            </Section>
+            <Section>
+              <CertificateList />
+            </Section>
+            <Section>
+              <ProjectList />
+            </Section>
           </div>
           <div className="secondary col-lg-4 col-12">
-            <Info />
-            <Personal />
-            <SkillList />
-            <EducationList />
-            <LanguageList />
+            <Section>
+              <Info />
+            </Section>
+            <Section>
+              <Personal />
+            </Section>
+            <Section>
+              <SkillList />
+            </Section>
+            <Section>
+              <EducationList />
+            </Section>
+            <Section>
+              <LanguageList />
+            </Section>
           </div>
-        </div>
+        </motion.div>
       </div>
       <Footer />
     </div>
