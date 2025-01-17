@@ -1,7 +1,7 @@
 const myData = {
   img: "nishalnm.png",
   name: "Nishal NM",
-  job: "Student Engineered",
+  job: "Student Engineers",
   linkedin: "http://www.linkedin.com/in/nishal-nm",
   github: "https://github.com/nishal-nm",
   facebook: "https://www.facebook.com/ashikmalu.cpr",
