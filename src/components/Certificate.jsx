@@ -46,10 +46,8 @@ function Certificate(props) {
             src={"assets/images/certificates/" + props.img + ".jpeg"}
             alt={props.title}
             style={{
-              width: "100%", // Ensure the image takes full width
-              height: "auto", // Maintain aspect ratio
-              maxWidth: "90%", // Limit max width to 90% of the viewport
-              maxHeight: "90%", // Limit max height to 90% of the viewport
+              maxWidth: "90%",
+              maxHeight: "90%",
               borderRadius: "8px",
               boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.5)",
             }}
