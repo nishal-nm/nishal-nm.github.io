@@ -1,0 +1,109 @@
+Nishal NM
+Student Engineer
+
+India
++91 6235544220
+nishalshalu17@gmail.com
+LinkedIn: http://www.linkedin.com/in/nishal-nm
+
+Portfolio
+
+https://nishal-nm.github.io/nishal-portfolio
+
+Professional Summary
+
+As a Computer Science undergraduate, my expertise lies in Python, front-end web development, and database management. I am passionate about applying these skills to real-world projects and continuously expanding my knowledge in the field of technology. With a solid foundation in computer science and a drive for continuous improvement, I am well-prepared to contribute to innovative solutions and make a meaningful impact in the industry. 
+
+Work History
+
+September 2024 - September 2024
+
+Techmaghi Institution - Kochi, India
+Intern    
+
+Completed a 5-day internship on Frontend Development with Python and Flask at Techmaghi Institution 
+Worked on a project titled 'Blog Web Application' using Flask and SQLite 
+Gained exposure to industry-relevant web development practices 
+
+May 2023 - May 2023
+
+ICFOSS - Trivandrum, India
+Intern    
+
+Completed a 5-day internship on Machine Learning with
+Python at ICFOSS 
+Gained hands-on experience in implementing machine learning algorithms. 
+Collaborated on small-scale machine learning projects 
+
+Education
+
+April 2021
+GHSS Tirurangadi Malappuram, India
+No Degree Biological Sciences
+
+Expected in April 2025
+MEA Engineering College Perintalmanna, India
+Bachelor of Technology Computer Science
+
+Certifications
+
+September 2024
+Frontend Python Web Development 
+
+May 2023
+Machine Learning with Python 
+
+August 2024
+Python for Data Science 
+
+Skills
+
+HTML
+
+CSS
+
+JavaScript
+
+Python
+
+SQL
+
+React
+
+Material UI
+
+Bootstrap
+
+Material UI 
+
+Software
+
+VS Code 
+Advanced
+
+Git 
+Upper intermediate
+
+Canva 
+Upper intermediate
+
+Jupyter Notebook 
+Intermediate
+
+Personal Details
+
+Date Of Birth: 30/12/2003
+Nationality: Indian
+Marital Status: Single
+
+Gender: Male
+
+Languages
+
+Malayalam
+Bilingual or Proficient (C2)
+			
+
+English
+Upper intermediate (B2)
+			

@@ -566,32 +566,6 @@ a.dotted-link:hover {
   color: #79d19a;
 }
 
-/* Blog Section */
-.blog .item {
-  margin-bottom: 30px;
-}
-
-.blog .item .title {
-  font-size: 18px;
-  line-height: 1.3;
-}
-
-.blog .item .title a {
-  color: #778492;
-}
-
-.blog .item .title a:hover {
-  color: #5f6b77;
-}
-
-.blog .item p {
-  margin-bottom: 5px;
-}
-
-.blog .item:last-child {
-  margin-bottom: 0;
-}
-
 /* List section */
 .list ul li {
   margin-bottom: 10px;
@@ -1031,18 +1005,6 @@ body[data-theme="dark"] .text-muted {
   transform: translateY(-2px); /* Lift effect */
 }
 
-/* Active (Click) Effect */
-button:active {
-  transform: translateY(0);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds depth on click */
-}
-
-/* Focus Effect */
-button:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Subtle focus ring */
-}
-
 .certificate-link {
   display: inline-block;
   opacity: 0.5; /* Make it subtle */
@@ -1056,21 +1018,7 @@ button:focus {
   color: #007bff; /* Match your theme color */
 }
 
-@keyframes stretchFromCenter {
-  0% {
-    transform: scaleX(0);
-    opacity: 0;
-  }
-  50% {
-    transform: scaleX(1.1);
-    opacity: 1;
-  }
-  100% {
-    transform: scaleX(1);
-  }
-}
-
-.animate {
-  animation: stretchFromCenter 1.5s ease-out forwards;
-  transform-origin: center;
+.extend-icon:hover {
+  transform: scale(1.5);
+  transition: transform 0.3s ease;
 }
