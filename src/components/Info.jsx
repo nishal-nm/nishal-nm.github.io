@@ -25,7 +25,7 @@ function Info() {
             <li>
               <i className={"fas fa-phone"}></i>
               <span className="sr-only">Phone:</span>
-              +91 {myData.phone}
+              {myData.phone}
             </li>
           </ul>
         </div>
