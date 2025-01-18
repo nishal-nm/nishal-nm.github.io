@@ -1,7 +1,7 @@
 const resumeData = {
-  pdf: "assets/pdf/resume.pdf",
-  ats: "assets/pdf/resume_ats.txt",
-  word: "assets/pdf/resume.docx",
+  pdf: "assets/pdf/resumes/resume.pdf",
+  ats: "assets/pdf/resumes/resume_ats.txt",
+  word: "assets/pdf/resumes/resume.docx",
 };
 
 export default resumeData;

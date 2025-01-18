@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import React from "react";
-import Section from "./Section";
 import About from "./components/About";
 import CertificateList from "./components/CertificateList";
 import EducationList from "./components/EducationList";
@@ -25,35 +24,24 @@ const App = () => {
           transition={{ duration: 1, ease: "easeOut" }}
         >
           <div className="primary col-lg-8 col-12">
-            <Section>
-              <About />
-            </Section>
-            <Section>
-              <ExperienceList />
-            </Section>
-            <Section>
-              <CertificateList />
-            </Section>
-            <Section>
-              <ProjectList />
-            </Section>
+            <About />
+
+            <ExperienceList />
+
+            <CertificateList />
+
+            <ProjectList />
           </div>
           <div className="secondary col-lg-4 col-12">
-            <Section>
-              <Info />
-            </Section>
-            <Section>
-              <Personal />
-            </Section>
-            <Section>
-              <SkillList />
-            </Section>
-            <Section>
-              <EducationList />
-            </Section>
-            <Section>
-              <LanguageList />
-            </Section>
+            <Info />
+
+            <Personal />
+
+            <SkillList />
+
+            <EducationList />
+
+            <LanguageList />
           </div>
         </motion.div>
       </div>

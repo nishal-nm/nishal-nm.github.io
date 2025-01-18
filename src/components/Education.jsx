@@ -6,7 +6,7 @@ function Education(props) {
       <h3 className="title">
         <i className="fas fa-graduation-cap" style={{ marginRight: "4px" }}></i>{" "}
         {props.qual}{" "}
-        <span class="badge badge-theme right-align">
+        <span className="badge badge-theme right-align">
           <a
             href={"assets/pdf/certificates/" + props.qual + ".pdf"}
             target="_blank"

@@ -24,13 +24,13 @@ function Certificate(props) {
           <p className="mb-2">{props.content}</p>
           <p>
             <a
-              class="more-link"
+              className="more-link"
               href={"assets/pdf/certificates/" + props.img + ".pdf"}
               target="_blank"
               rel="noreferrer"
               download
             >
-              <i class="fas fa-external-link-alt"></i>Download
+              <i className="fas fa-external-link-alt"></i>Download
             </a>
           </p>
         </div>
@@ -39,27 +39,17 @@ function Certificate(props) {
       {/* Modal for enlarged image */}
       {isModalOpen && (
         <div
-          className="modal"
-          style={{
-            position: "fixed",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            backgroundColor: "rgba(0, 0, 0, 0.8)",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            zIndex: 1000,
-          }}
+          className="modal-overlay"
           onClick={toggleModal} // Close modal when clicking outside the image
         >
           <img
             src={"assets/images/certificates/" + props.img + ".jpeg"}
             alt={props.title}
             style={{
-              maxWidth: "90%",
-              maxHeight: "90%",
+              width: "100%", // Ensure the image takes full width
+              height: "auto", // Maintain aspect ratio
+              maxWidth: "90%", // Limit max width to 90% of the viewport
+              maxHeight: "90%", // Limit max height to 90% of the viewport
               borderRadius: "8px",
               boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.5)",
             }}

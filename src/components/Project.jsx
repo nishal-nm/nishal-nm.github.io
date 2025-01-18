@@ -2,21 +2,21 @@ import React from "react";
 
 function Project(props) {
   return (
-    <div class="item">
-      <h3 class="title">
+    <div className="item">
+      <h3 className="title">
         <a href={props.link} target="_blank" rel="noreferrer">
           {props.title + " "}
         </a>
       </h3>
-      <p class="summary">{props.desc}</p>
+      <p className="summary">{props.desc}</p>
       <p>
         <a
-          class="more-link"
+          className="more-link"
           href={props.more}
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fas fa-external-link-alt"></i>Find out more
+          <i className="fas fa-external-link-alt"></i>Find out more
         </a>
       </p>
     </div>

@@ -5,10 +5,10 @@ import Project from "./Project";
 
 function ProjectList() {
   return (
-    <section class="projects section">
-      <div class="section-inner shadow-sm rounded">
-        <h2 class="heading">Projects</h2>
-        <div class="content">
+    <section className="projects section">
+      <div className="section-inner shadow-sm rounded">
+        <h2 className="heading">Projects</h2>
+        <div className="content">
           {ProjectData.map((project) => {
             return (
               <Project
@@ -21,12 +21,12 @@ function ProjectList() {
             );
           })}
           <a
-            class="btn btn-cta-secondary"
+            className="btn btn-cta-secondary"
             href={myData.github + "?tab=repositories"}
             target="_blank"
             rel="noopener noreferrer"
           >
-            More on GitHub <i class="fas fa-chevron-right pt-1"></i>
+            More on GitHub <i className="fas fa-chevron-right pt-1"></i>
           </a>
         </div>
       </div>
