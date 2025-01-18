@@ -376,30 +376,6 @@ a.dotted-link:hover {
   font-weight: normal;
 }
 
-/* Git section */
-.github-graph {
-  margin-bottom: 30px;
-}
-
-.github-graph .js-calendar-graph-svg {
-  max-width: 100%;
-}
-
-.github-graph h2 {
-  font-size: 18px;
-}
-
-.ghfeed {
-  height: 500px;
-}
-
-.ghfeed,
-.ghfeed *,
-.ghfeed *:before,
-.ghfeed *:after {
-  box-sizing: content-box;
-}
-
 /* Info Section */
 .info .svg-inline--fa {
   margin-right: 15px;
@@ -462,47 +438,6 @@ a.dotted-link:hover {
   margin-right: 3px;
   position: relative;
   top: 0;
-}
-
-/* Testimonials section */
-.testimonials .item {
-  margin-bottom: 30px;
-}
-
-.testimonials .item:last-child {
-  margin-bottom: 0;
-}
-
-.testimonials .item .quote {
-  color: #666;
-  font-size: 16px;
-  border-left: 5px solid #9fdeb7;
-  padding: 5px 15px;
-  margin-bottom: 15px;
-}
-
-.testimonials .item .quote p {
-  margin-bottom: 0;
-}
-
-.testimonials .item .quote .svg-inline--fa {
-  color: #79d19a;
-  margin-right: 15px;
-}
-
-.testimonials .item .source {
-  font-size: 14px;
-  padding-left: 20px;
-  font-weight: 500;
-}
-
-.testimonials .item .source .name {
-  color: #939ea9;
-  font-weight: 600;
-}
-
-.testimonials .item .source .title {
-  color: #999;
 }
 
 /* Education section */
