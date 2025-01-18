@@ -1055,3 +1055,22 @@ button:focus {
   transform: scale(1.1); /* Slightly increase size for emphasis */
   color: #007bff; /* Match your theme color */
 }
+
+@keyframes stretchFromCenter {
+  0% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scaleX(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.animate {
+  animation: stretchFromCenter 1.5s ease-out forwards;
+  transform-origin: center;
+}
