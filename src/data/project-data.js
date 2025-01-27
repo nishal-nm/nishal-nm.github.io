@@ -13,6 +13,13 @@ const ProjectData = [
     title: "Quiz Game - A Simple Timed Quiz Game",
     desc: "An engaging and interactive quiz game that challenges users with a variety of topics. Features timed questions, immediate feedback, score tracking, and a responsive design. Designed to test knowledge and provide educational fun in a user-friendly interface.",
   },
+  {
+    id: 3,
+    link: "https://nishal-nm.github.io/fuel-calculator/",
+    more: "https://github.com/nishal-nm/fuel-calculator",
+    title: "Fuel Calculator - A Fuel Cost Estimator",
+    desc: "A fuel cost calculator app that estimates fuel expenses based on distance, vehicle mileage, and fuel price. Simple, efficient, and easy-to-use, it helps users calculate the total fuel cost for their trips.",
+  },
 ];
 
 export default ProjectData;
