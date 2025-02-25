@@ -37,8 +37,8 @@
   },
   {
     "id": 7,
-    "name": "Node.js & Express",
-    "percent": "20%",
-    "tooltip": "Learning Node.js and Express for building RESTful APIs and server-side applications."
+    "name": "Django",
+    "percent": "75%",
+    "tooltip": "Proficient in Django for building scalable, secure, and high-performance web applications."
   }
 ]
