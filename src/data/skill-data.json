@@ -1,4 +1,4 @@
-[
+.[
   {
     "id": 1,
     "name": "HTML5 & CSS3",
@@ -31,9 +31,9 @@
   },
   {
     "id": 6,
-    "name": "SQL",
-    "percent": "10%",
-    "tooltip": "Basic SQL knowledge for simple queries and database operations."
+    "name": "MySQL",
+    "percent": "85%",
+    "tooltip": "Database design, queries, indexing, and optimization."
   },
   {
     "id": 7,
