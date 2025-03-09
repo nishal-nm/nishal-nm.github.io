@@ -19,5 +19,12 @@
     "more": "https://github.com/nishal-nm/fuel-calculator",
     "title": "Fuel Calculator - A Fuel Cost Estimator",
     "desc": "A fuel cost calculator app that estimates fuel expenses based on distance, vehicle mileage, and fuel price. Simple, efficient, and easy-to-use, it helps users calculate the total fuel cost for their trips."
-  }
+  },
+  {
+  "id": 4,
+  "link": "https://rideshare-wheat.vercel.app/",
+  "more": "https://github.com/nishal-nm/ridelync",
+  "title": "RideLync - A Simple Ridesharing Platform",
+  "desc": "RideLync is a web-based ridesharing platform developed as a final-year project using React for the frontend, Django for the backend, and MySQL for database management. It offers features like posting a ride, searching available rides, user chat, ride ratings, and more, making commuting easier and more efficient."
+}
 ]
