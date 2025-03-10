@@ -19,9 +19,9 @@
   },
   {
     "id": 4,
-    "name": "Bootstrap",
+    "name": "Tailwind CSS",
     "percent": "80%",
-    "tooltip": "Advanced Bootstrap skills for responsive, mobile-first web designs and pre-built components."
+    "tooltip": "Advanced Tailwind CSS skills for responsive web designs and pre-built components."
   },
   {
     "id": 5,
