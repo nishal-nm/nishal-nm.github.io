@@ -19,9 +19,9 @@
   },
   {
     "id": 4,
-    "name": "Tailwind CSS",
-    "percent": "80%",
-    "tooltip": "Advanced Tailwind CSS skills for responsive web designs and pre-built components."
+    "name": "Django",
+    "percent": "75%",
+    "tooltip": "Proficient in Django for building scalable, secure, and high-performance web applications."
   },
   {
     "id": 5,
@@ -32,13 +32,13 @@
   {
     "id": 6,
     "name": "MySQL",
-    "percent": "85%",
+    "percent": "80%",
     "tooltip": "Database design, queries, indexing, and optimization."
   },
   {
     "id": 7,
-    "name": "Django",
-    "percent": "75%",
-    "tooltip": "Proficient in Django for building scalable, secure, and high-performance web applications."
-  }
+    "name": "GitHub",
+    "percent": "85%",
+    "tooltip": "Proficient in Git and GitHub for version control, collaboration, and repository management."
+  },
 ]
