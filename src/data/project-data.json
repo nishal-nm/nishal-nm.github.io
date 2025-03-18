@@ -23,7 +23,7 @@
   {
   "id": 4,
   "link": "https://rideshare-wheat.vercel.app/",
-  "more": "https://github.com/nishal-nm/ridelync",
+  "more": "https://github.com/nishal-nm/ridelync-backend",
   "title": "RideLync - A Simple Ridesharing Platform",
   "desc": "RideLync is a web-based ridesharing platform developed as a final-year project using React for the frontend, Django for the backend, and MySQL for database management. It offers features like posting a ride, searching available rides, user chat, ride ratings, and more, making commuting easier and more efficient."
 }
