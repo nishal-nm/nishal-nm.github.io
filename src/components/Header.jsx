@@ -43,7 +43,7 @@ function Header() {
         <div className="row align-items-center">
           <div className="col">
             <img
-              className="profile-image img-fluid float-start rounded-circle"
+              className="profile-image img-fluid float-start rounded-circle w-10 h-10"
               src={"assets/images/" + myData.img}
               alt="profile"
             />

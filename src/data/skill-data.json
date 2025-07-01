@@ -8,8 +8,8 @@
   {
     "id": 2,
     "name": "Javascript",
-    "percent": "45%",
-    "tooltip": "Intermediate JavaScript and JQuery for dynamic web development and event handling."
+    "percent": "89%",
+    "tooltip": "Proficient JavaScript knowledge for dynamic web development and event handling."
   },
   {
     "id": 3,
@@ -19,9 +19,9 @@
   },
   {
     "id": 4,
-    "name": "Bootstrap",
-    "percent": "80%",
-    "tooltip": "Advanced Bootstrap skills for responsive, mobile-first web designs and pre-built components."
+    "name": "Django",
+    "percent": "75%",
+    "tooltip": "Proficient in Django for building scalable, secure, and high-performance web applications."
   },
   {
     "id": 5,
@@ -31,14 +31,14 @@
   },
   {
     "id": 6,
-    "name": "SQL",
-    "percent": "55%",
-    "tooltip": "Basic SQL knowledge for simple queries and database operations."
+    "name": "MySQL",
+    "percent": "80%",
+    "tooltip": "Database design, queries, indexing, and optimization."
   },
   {
     "id": 7,
-    "name": "Node.js & Express",
-    "percent": "20%",
-    "tooltip": "Learning Node.js and Express for building RESTful APIs and server-side applications."
+    "name": "GitHub",
+    "percent": "85%",
+    "tooltip": "Proficient in Git and GitHub for version control, collaboration, and repository management."
   }
 ]
