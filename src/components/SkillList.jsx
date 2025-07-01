@@ -22,16 +22,6 @@ function SkillList() {
                 />
               );
             })}
-            <p>
-              <a
-                className="more-link"
-                href={myData.github}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fas fa-external-link-alt"></i> More on GitHub
-              </a>
-            </p>
           </div>
         </div>
       </div>
