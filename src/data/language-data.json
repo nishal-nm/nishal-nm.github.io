@@ -9,7 +9,7 @@
     "id": 2,
     "lang": "English",
     "level": "Intermediate",
-    "star": 3
+    "star": 3.5
   },
   {
     "id": 3,
@@ -21,6 +21,6 @@
     "id": 4,
     "lang": "Hindi",
     "level": "Conversational",
-    "star": 1.5
+    "star": 1
   }
 ]
