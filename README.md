@@ -1,61 +1,73 @@
-# My Portfolio Website
+# nishal-nm.github.io — Personal Portfolio
 
-Welcome to my personal portfolio website repository! This website is a showcase of my skills, projects, and professional journey. It's built using modern web technologies, and serves as a way for potential clients, employers, or collaborators to learn more about me and my work.
+My personal portfolio website. Clean, minimal, dark/light mode, data-driven.
 
-## Demo
+**Live → [nishal-nm.github.io](https://nishal-nm.github.io)**
 
-You can view the live version of the website by visiting:  
-**[https://nishal-nm.github.io]**
+---
+
+## Stack
+
+- Vanilla HTML, CSS, JavaScript — no frameworks, no build step
+- All content lives in `data/data.json` — the JS reads it and renders everything
+
+## Structure
+
+```
+nishal-nm.github.io/
+├── index.html            # Page shell (no hardcoded content)
+├── data/
+│   └── data.json         # ← edit this to update the site
+└── assets/
+    ├── css/
+    │   └── style.css
+    └── js/
+        └── main.js
+```
+
+## Updating Content
+
+Everything is in `data/data.json`. No need to touch HTML or JS.
+
+| What you want to update | Where in data.json |
+|---|---|
+| New job or internship | `work[]` array |
+| New project | `projects[]` array |
+| New skill | `skills[].items[]` in the right category |
+| New tech in the marquee | `marquee[]` array |
+| Contact details | `contact{}` object |
+| About text | `profile.about` |
+
+After editing, just push:
+
+```bash
+git add data/data.json
+git commit -m "your message"
+git push
+```
+
+GitHub Pages picks it up automatically within a minute.
+
+## Running Locally
+
+The site uses `fetch()` to load `data.json`, so it needs a local server — opening `index.html` directly won't work.
+
+```bash
+npx serve .
+```
+
+Then open `http://localhost:3000`.
 
 ## Features
 
-- **Responsive Design**: The website adapts to all screen sizes (desktop, tablet, and mobile).
-- **Projects Section**: A list of projects I've worked on, including details, links, and images.
-- **About Me**: A brief description of who I am and what I do.
-- **Skills**: A visual representation of my technical skills and expertise.
-
-## Technologies Used
-
-- HTML5
-- JavaScript (ES6+)
-- React
-- Tailwind CSS
-
-## Installation
-
-To run the website locally, follow these steps:
-
-1. Clone the repository to your local machine:
-    ```bash
-    git clone https://github.com/nishal-nm/nishal-nm.github.io.git
-    ```
-
-2. Navigate to the project directory:
-    ```bash
-    cd nishal-nm.github.io
-    ```
-
-3. Install necessary dependencies:
-    ```bash
-    npm install
-    ```
-
-4. Run the React app in your web browser:
-    ```bash
-    npm start
-    ```
-
-Alternatively, if you're using a local server setup, you can run it through a development server (e.g., using VS Code Live Server or similar).
-
-## Usage
-
-1. Customize the website by editing the files in the directory `src` and other files (e.g., adding new projects, updating your bio, etc.).
-2. Push your changes to GitHub to update the live version of the website (if you're using GitHub Pages).
+- Dark / light mode toggle with system preference detection and `localStorage` persistence
+- Scroll-triggered fade animations
+- Animated skill bars
+- Custom cursor (desktop)
+- Fully responsive
 
 ## Contact
 
-You can reach me at:
-
-- Email: [nishalshalu17@gmail.com](mailto:nishalshalu17@gmail.com)
-- LinkedIn: [http://www.linkedin.com/in/nishal-nm](http://www.linkedin.com/in/nishal-nm)
-- GitHub: [https://github.com/nishal-nm](https://github.com/nishal-nm)
+- **Email** — [nishalshalu17@gmail.com](mailto:nishalshalu17@gmail.com)
+- **LinkedIn** — [linkedin.com/in/nishal-nm](https://linkedin.com/in/nishal-nm)
+- **GitHub** — [github.com/nishal-nm](https://github.com/nishal-nm)

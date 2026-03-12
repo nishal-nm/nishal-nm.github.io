@@ -1,0 +1,223 @@
+{
+  "meta": {
+    "title": "Nishal NM · Backend Developer",
+    "description": "Python Backend Developer building production-grade, API-driven systems with Django, Docker, and real-time infrastructure.",
+    "url": "https://nishal-nm.github.io"
+  },
+
+  "profile": {
+    "name": "Nishal NM",
+    "firstName": "Nishal",
+    "lastName": "NM",
+    "role": "Backend Developer",
+    "tagline": "Building systems that run, not just code that compiles.",
+    "taglineHighlight": "systems that run",
+    "available": true,
+    "availableText": "Available for opportunities",
+    "about": "I'm a backend developer from Malappuram, Kerala — I enjoy building things that actually hold up in production. I care about clean APIs, reliable infrastructure, and systems that solve real problems for real people.",
+    "aboutHighlights": ["Malappuram, Kerala", "solve real problems"],
+    "footerNote": "Built with intention, not a template."
+  },
+
+  "contact": {
+    "email": "nishalshalu17@gmail.com",
+    "phone": "+91 62355 44220",
+    "location": "Tirurangadi, Malappuram, Kerala",
+    "linkedin": "https://linkedin.com/in/nishal-nm",
+    "linkedinHandle": "linkedin.com/in/nishal-nm",
+    "github": "https://github.com/nishal-nm",
+    "githubHandle": "github.com/nishal-nm",
+    "facebook": "https://www.facebook.com/ashikmalu.cpr"
+  },
+
+  "education": [
+    {
+      "degree": "B.Tech — Computer Science & Engineering",
+      "institution": "MEA Engineering College",
+      "location": "Perinthalmanna, Kerala",
+      "year": "2021 – 2025",
+      "grade": "CGPA: 7.73 / 10"
+    },
+    {
+      "degree": "Higher Secondary (HSE)",
+      "institution": "GHSS Tirurangadi",
+      "location": "Tirurangadi, Kerala",
+      "year": "2019 – 2021",
+      "grade": null
+    },
+    {
+      "degree": "High School (SSLC)",
+      "institution": "Farook English Medium School",
+      "location": "Kerala",
+      "year": "2019",
+      "grade": null
+    }
+  ],
+
+  "work": [
+    {
+      "id": 1,
+      "role": "Backend Developer & Team Lead",
+      "company": "Coremicron Enterprise LLP",
+      "type": "Full-time",
+      "period": "Jun 2025 — Present",
+      "duration": "9 months",
+      "current": true,
+      "badge": "Live",
+      "badgeType": "live",
+      "points": [
+        "Led a 4-member cross-functional team (backend, Flutter, 2× frontend) delivering a production-grade coaching institution platform end-to-end.",
+        "Designed and maintained 30+ REST APIs powering student, mentor, and admin workflows across web and mobile.",
+        "Built real-time student activity monitoring via WebSockets (Django Channels) and async task pipelines with Celery + Redis.",
+        "Integrated Razorpay for premium subscriptions (Flutter app) and cubicle rental bookings (web).",
+        "Containerised all services with Docker, configured Nginx for HTTP and WebSocket routing, deployed on a dedicated server."
+      ]
+    },
+    {
+      "id": 2,
+      "role": "Python Web Development Intern",
+      "company": "Techmaghi",
+      "location": "Kochi",
+      "type": "Internship",
+      "period": "2024",
+      "duration": null,
+      "current": false,
+      "badge": "Internship",
+      "badgeType": "default",
+      "points": [
+        "Built web applications with Python and Flask; worked with SQLite databases.",
+        "Delivered a Blog Web Application as the primary project."
+      ]
+    },
+    {
+      "id": 3,
+      "role": "Machine Learning Intern",
+      "company": "ICFOSS",
+      "location": "Thiruvananthapuram",
+      "type": "Internship",
+      "period": "2023",
+      "duration": null,
+      "current": false,
+      "badge": "Internship",
+      "badgeType": "default",
+      "points": [
+        "Worked on Python ML workflows — data preprocessing, feature engineering, model evaluation.",
+        "Contributed to early research and data pipeline development for the RideLync project."
+      ]
+    }
+  ],
+
+  "projects": [
+    {
+      "id": 1,
+      "index": "001",
+      "tag": "Production",
+      "name": "Coaching Institution Platform",
+      "stack": ["Django", "DRF", "Channels", "Celery", "Redis", "Docker", "Nginx", "Razorpay", "MinIO"],
+      "description": "Full institutional backend managing students, mentors, admins, and payments. Real-time activity monitoring via WebSockets, background pipelines, mobile payment integration, and live server deployment — built and led from scratch.",
+      "link": null,
+      "linkLabel": null,
+      "github": null,
+      "private": true
+    },
+    {
+      "id": 2,
+      "index": "002",
+      "tag": "Final Year",
+      "name": "RideLync",
+      "stack": ["Python", "Django", "MySQL", "YOLOv5", "EasyOCR", "React"],
+      "description": "Route-matching system that ingests vehicle movement data from camera checkpoints. Uses YOLOv5 for vehicle detection and EasyOCR for automated license plate recognition to detect recurring travel patterns.",
+      "link": "https://rideshare-wheat.vercel.app/",
+      "linkLabel": "Live ↗",
+      "github": "https://github.com/nishal-nm/ridelync-backend",
+      "private": false
+    },
+    {
+      "id": 3,
+      "index": "003",
+      "tag": "Side Project",
+      "name": "Test Memory",
+      "stack": ["React.js"],
+      "description": "A card-matching memory game with smooth animations, responsive design, and clean game logic. Built to sharpen React skills.",
+      "link": "https://nishal-nm.github.io/memory-game/",
+      "linkLabel": "Live ↗",
+      "github": "https://github.com/nishal-nm/memory-game",
+      "private": false
+    },
+    {
+      "id": 4,
+      "index": "004",
+      "tag": "Side Project",
+      "name": "Quiz Game",
+      "stack": ["React.js"],
+      "description": "Interactive timed quiz with immediate feedback, score tracking, and responsive UI across multiple topic categories.",
+      "link": "https://nishal-nm.github.io/quiz-game/",
+      "linkLabel": "Live ↗",
+      "github": "https://github.com/nishal-nm/quiz-game",
+      "private": false
+    },
+    {
+      "id": 5,
+      "index": "005",
+      "tag": "Side Project",
+      "name": "Fuel Calculator",
+      "stack": ["HTML", "CSS", "JavaScript"],
+      "description": "A fuel cost estimator that calculates trip expenses based on distance, mileage, and fuel price.",
+      "link": "https://nishal-nm.github.io/fuel-calculator/",
+      "linkLabel": "Live ↗",
+      "github": "https://github.com/nishal-nm/fuel-calculator",
+      "private": false
+    }
+  ],
+
+  "skills": [
+    {
+      "category": "Backend & Async",
+      "items": [
+        { "name": "Python",       "level": 0.92 },
+        { "name": "Django",       "level": 0.90 },
+        { "name": "Django REST",  "level": 0.88 },
+        { "name": "Channels / WS","level": 0.82 },
+        { "name": "Celery",       "level": 0.80 }
+      ]
+    },
+    {
+      "category": "Data & Storage",
+      "items": [
+        { "name": "MySQL",      "level": 0.85 },
+        { "name": "Redis",      "level": 0.80 },
+        { "name": "MinIO / S3", "level": 0.72 }
+      ]
+    },
+    {
+      "category": "Infrastructure",
+      "items": [
+        { "name": "Docker",       "level": 0.84 },
+        { "name": "Nginx",        "level": 0.78 },
+        { "name": "Git",          "level": 0.88 },
+        { "name": "Linux Server", "level": 0.74 },
+        { "name": "Razorpay",     "level": 0.78 }
+      ]
+    }
+  ],
+
+  "marquee": [
+    "Django", "Django REST Framework", "WebSockets", "Celery",
+    "Redis", "Docker", "Nginx", "MySQL", "Razorpay", "MinIO",
+    "Python", "REST APIs"
+  ],
+
+  "languages": [
+    { "name": "Malayalam", "level": "Native",        "stars": 5 },
+    { "name": "English",   "level": "Intermediate",  "stars": 4 },
+    { "name": "Tamil",     "level": "Conversational", "stars": 2 },
+    { "name": "Hindi",     "level": "Basic",          "stars": 1 }
+  ],
+
+  "stats": [
+    { "value": "9mo", "label": "Industry Experience" },
+    { "value": "30+", "label": "REST APIs Built" },
+    { "value": "4",   "label": "Team Members Led" },
+    { "value": "1",   "label": "Live Production System" }
+  ]
+}
