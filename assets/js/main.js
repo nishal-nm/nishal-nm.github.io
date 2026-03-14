@@ -32,7 +32,7 @@ function buildHero(profile, contact) {
   $('#hero-label').textContent = `Backend Developer · ${profile.location || 'Kerala, India'}`;
   // Split name into two lines: first name + last (italic)
   const parts = profile.name.split(' ');
-  $('#hero-name').innerHTML = `${parts[0]}<br><span class="it">${parts.slice(1).join(' ')}</span>`;
+  $('#hero-name').innerHTML = `${parts[0]} <span class="it">${parts.slice(1).join(' ')}</span>`;
   // Tagline: bold the highlight phrase
   const tl = profile.tagline.replace(
     profile.taglineHighlight,
