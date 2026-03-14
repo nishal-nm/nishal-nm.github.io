@@ -172,7 +172,7 @@ nav {
   font-family: var(--mono); font-size: 0.68rem;
   letter-spacing: 0.1em; text-transform: uppercase;
   padding: 0.7rem 1.5rem; text-decoration: none;
-  border: none; cursor: none; transition: all 0.2s; display: inline-block;
+  border: none; cursor: pointer; transition: all 0.2s; display: inline-block;
 }
 .btn-fill { background: var(--accent); color: #fff; }
 .btn-fill:hover { background: #9188f8; }
@@ -418,7 +418,7 @@ nav {
   background: transparent;
   border: 1px solid var(--border);
   border-radius: 2px;
-  cursor: none;
+  cursor: pointer;
   color: var(--muted);
   transition: border-color 0.2s, color 0.2s, background 0.2s;
   flex-shrink: 0;

@@ -281,9 +281,17 @@ function initCursor() {
 }
 
 function initScrollAnimations() {
+  // Disconnect any previous observer first to avoid duplicates
+  if (window._scrollObserver) window._scrollObserver.disconnect();
+
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
-  }, { threshold: 0.08 });
+  }, {
+    threshold: 0.08,
+    rootMargin: '0px 0px -20px 0px'
+  });
+
+  window._scrollObserver = io;
   $$('.fu').forEach(el => io.observe(el));
 }
 
@@ -324,19 +332,16 @@ async function initData() {
   }
 }
 
-function initInteractions() {
-  // These must always run — independent of data loading
+document.addEventListener('DOMContentLoaded', async () => {
+  // Interactions that don't need data — run immediately
   initTheme();
   initMobileMenu();
   initCursor();
+
+  // Load and render data
+  await initData();
+
+  // Run observers after all dynamic content is in the DOM
   initScrollAnimations();
   initSkillBars();
-}
-
-document.addEventListener('DOMContentLoaded', async () => {
-  // Start both concurrently — interactions don't need to wait for data
-  initInteractions();
-  await initData();
-  // Re-run scroll observer after dynamic content is injected
-  initScrollAnimations();
 });
