@@ -189,6 +189,48 @@ function buildFooter(profile, contact) {
   $('#footer-right').textContent = profile.footerNote;
 }
 
+/* ── MOBILE MENU ────────────────────────────────────────── */
+
+function initMobileMenu() {
+  const burger  = $('#nav-burger');
+  const menu    = $('#mobile-menu');
+  const overlay = $('#mobile-overlay');
+  if (!burger || !menu) return;
+
+  function openMenu() {
+    burger.classList.add('open');
+    menu.classList.add('open');
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    menu.setAttribute('aria-hidden', 'false');
+  }
+
+  function closeMenu() {
+    burger.classList.remove('open');
+    menu.classList.remove('open');
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    menu.setAttribute('aria-hidden', 'true');
+  }
+
+  burger.addEventListener('click', () => {
+    menu.classList.contains('open') ? closeMenu() : openMenu();
+  });
+
+  // Close on overlay click
+  overlay.addEventListener('click', closeMenu);
+
+  // Close on nav link click
+  menu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', closeMenu);
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeMenu();
+  });
+}
+
 /* ── THEME ──────────────────────────────────────────────── */
 
 function initTheme() {
@@ -239,9 +281,17 @@ function initCursor() {
 }
 
 function initScrollAnimations() {
+  // Disconnect any previous observer first to avoid duplicates
+  if (window._scrollObserver) window._scrollObserver.disconnect();
+
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
-  }, { threshold: 0.08 });
+  }, {
+    threshold: 0.08,
+    rootMargin: '0px 0px -20px 0px'
+  });
+
+  window._scrollObserver = io;
   $$('.fu').forEach(el => io.observe(el));
 }
 
@@ -261,7 +311,7 @@ function initSkillBars() {
 
 /* ── MAIN ───────────────────────────────────────────────── */
 
-async function init() {
+async function initData() {
   try {
     const data = await loadData();
     const { meta, profile, contact, education, work, projects, skills, marquee, languages } = data;
@@ -277,15 +327,21 @@ async function init() {
     buildLanguages(languages);
     buildContact(profile, contact);
     buildFooter(profile, contact);
-
-    // Init interactions after DOM is populated
-    initTheme();
-    initCursor();
-    initScrollAnimations();
-    initSkillBars();
   } catch (err) {
-    console.error('Portfolio init error:', err);
+    console.error('Portfolio data error:', err);
   }
 }
 
-document.addEventListener('DOMContentLoaded', init);
+document.addEventListener('DOMContentLoaded', async () => {
+  // Interactions that don't need data — run immediately
+  initTheme();
+  initMobileMenu();
+  initCursor();
+
+  // Load and render data
+  await initData();
+
+  // Run observers after all dynamic content is in the DOM
+  initScrollAnimations();
+  initSkillBars();
+});
