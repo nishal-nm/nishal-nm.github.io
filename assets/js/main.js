@@ -303,7 +303,7 @@ function initSkillBars() {
 
 /* ── MAIN ───────────────────────────────────────────────── */
 
-async function init() {
+async function initData() {
   try {
     const data = await loadData();
     const { meta, profile, contact, education, work, projects, skills, marquee, languages } = data;
@@ -319,16 +319,24 @@ async function init() {
     buildLanguages(languages);
     buildContact(profile, contact);
     buildFooter(profile, contact);
-
-    // Init interactions after DOM is populated
-    initTheme();
-    initMobileMenu();
-    initCursor();
-    initScrollAnimations();
-    initSkillBars();
   } catch (err) {
-    console.error('Portfolio init error:', err);
+    console.error('Portfolio data error:', err);
   }
 }
 
-document.addEventListener('DOMContentLoaded', init);
+function initInteractions() {
+  // These must always run — independent of data loading
+  initTheme();
+  initMobileMenu();
+  initCursor();
+  initScrollAnimations();
+  initSkillBars();
+}
+
+document.addEventListener('DOMContentLoaded', async () => {
+  // Start both concurrently — interactions don't need to wait for data
+  initInteractions();
+  await initData();
+  // Re-run scroll observer after dynamic content is injected
+  initScrollAnimations();
+});
