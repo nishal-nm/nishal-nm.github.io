@@ -70,7 +70,10 @@
         "Designed and maintained 30+ REST APIs powering student, mentor, and admin workflows across web and mobile.",
         "Built real-time student activity monitoring via WebSockets (Django Channels) and async task pipelines with Celery + Redis.",
         "Integrated Razorpay for premium subscriptions (Flutter app) and cubicle rental bookings (web).",
-        "Containerised all services with Docker, configured Nginx for HTTP and WebSocket routing, deployed on a dedicated server."
+        "Containerised all services with Docker, configured Nginx for HTTP and WebSocket routing, deployed on a dedicated server.",
+        "Automated daily DB backups via Celery — compressed SQL dumps with 7-day rolling retention.",
+        "Synced all backups and MinIO media files to Google Drive automatically using rclone.",
+        "Also rebuilt the backend of a legacy PHP CRM — separated it into a clean REST API with real-time WebSocket chat and dual-mode auth for web and mobile."
       ]
     },
     {
@@ -123,6 +126,18 @@
     {
       "id": 2,
       "index": "002",
+      "tag": "Production",
+      "name": "Legacy CRM Backend Rebuild",
+      "stack": ["PHP", "MySQL", "WebSockets", "Node.js", "REST APIs"],
+      "description": "Rebuilt the backend of a legacy PHP CRM — separated a mixed codebase into a standalone REST API and an independent frontend. Added WebSocket-based real-time chat, dual-mode auth for web and mobile, and proper security fixes throughout.",
+      "link": null,
+      "linkLabel": null,
+      "github": null,
+      "private": true
+    },
+    {
+      "id": 3,
+      "index": "003",
       "tag": "Final Year",
       "name": "RideLync",
       "stack": ["Python", "Django", "MySQL", "YOLOv5", "EasyOCR", "React"],
@@ -130,18 +145,6 @@
       "link": "https://rideshare-wheat.vercel.app/",
       "linkLabel": "Live ↗",
       "github": "https://github.com/nishal-nm/ridelync-backend",
-      "private": false
-    },
-    {
-      "id": 3,
-      "index": "003",
-      "tag": "Side Project",
-      "name": "Test Memory",
-      "stack": ["React.js"],
-      "description": "A card-matching memory game with smooth animations, responsive design, and clean game logic. Built to sharpen React skills.",
-      "link": "https://nishal-nm.github.io/memory-game/",
-      "linkLabel": "Live ↗",
-      "github": "https://github.com/nishal-nm/memory-game",
       "private": false
     },
     {
@@ -166,6 +169,18 @@
       "link": "https://nishal-nm.github.io/fuel-calculator/",
       "linkLabel": "Live ↗",
       "github": "https://github.com/nishal-nm/fuel-calculator",
+      "private": false
+    },
+    {
+      "id": 6,
+      "index": "006",
+      "tag": "Side Project",
+      "name": "Test Memory",
+      "stack": ["React.js"],
+      "description": "A card-matching memory game with smooth animations, responsive design, and clean game logic. Built to sharpen React skills.",
+      "link": "https://nishal-nm.github.io/memory-game/",
+      "linkLabel": "Live ↗",
+      "github": "https://github.com/nishal-nm/memory-game",
       "private": false
     }
   ],
