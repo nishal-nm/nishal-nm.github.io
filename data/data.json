@@ -151,6 +151,18 @@
       "id": 4,
       "index": "004",
       "tag": "Side Project",
+      "name": "Jarvis — Local LLM Agent",
+      "stack": ["Python", "Ollama", "Playwright", "Gradio"],
+      "description": "A local AI agent running entirely offline via Ollama. Uses a local LLM purely as a JSON intent router — classifies voice/text commands into structured actions, then dispatches to Python tools for browser automation, web search, app launching, and general Q&A.",
+      "link": null,
+      "linkLabel": null,
+      "github": null,
+      "private": true
+    },
+    {
+      "id": 5,
+      "index": "005",
+      "tag": "Side Project",
       "name": "Quiz Game",
       "stack": ["React.js"],
       "description": "Interactive timed quiz with immediate feedback, score tracking, and responsive UI across multiple topic categories.",
@@ -160,8 +172,8 @@
       "private": false
     },
     {
-      "id": 5,
-      "index": "005",
+      "id": 6,
+      "index": "006",
       "tag": "Side Project",
       "name": "Fuel Calculator",
       "stack": ["HTML", "CSS", "JavaScript"],
@@ -172,8 +184,8 @@
       "private": false
     },
     {
-      "id": 6,
-      "index": "006",
+      "id": 7,
+      "index": "007",
       "tag": "Side Project",
       "name": "Test Memory",
       "stack": ["React.js"],
