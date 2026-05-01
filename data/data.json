@@ -35,14 +35,14 @@
       "degree": "B.Tech — Computer Science & Engineering",
       "institution": "MEA Engineering College",
       "location": "Perinthalmanna, Kerala",
-      "year": "2021 – 2025",
+      "year": "2021 - 2025",
       "grade": "CGPA: 7.73 / 10"
     },
     {
       "degree": "Higher Secondary (HSE)",
       "institution": "GHSS Tirurangadi",
       "location": "Tirurangadi, Kerala",
-      "year": "2019 – 2021",
+      "year": "2019 - 2021",
       "grade": null
     },
     {
@@ -61,12 +61,12 @@
       "company": "Coremicron Enterprise LLP",
       "type": "Full-time",
       "period": "Jun 2025 — Present",
-      "duration": "9 months",
+      "duration": "11 months",
       "current": true,
       "badge": "Live",
       "badgeType": "live",
       "points": [
-        "Led a 4-member cross-functional team (backend, Flutter, 2× frontend) delivering a production-grade coaching institution platform end-to-end.",
+        "Led a 4-member cross-functional team (backend, Flutter, 2x frontend) delivering a production-grade coaching institution platform end-to-end.",
         "Designed and maintained 30+ REST APIs powering student, mentor, and admin workflows across web and mobile.",
         "Built real-time student activity monitoring via WebSockets (Django Channels) and async task pipelines with Celery + Redis.",
         "Integrated Razorpay for premium subscriptions (Flutter app) and cubicle rental bookings (web).",
@@ -230,7 +230,7 @@
   ],
 
   "stats": [
-    { "value": "9mo", "label": "Industry Experience" },
+    { "value": "11mo", "label": "Industry Experience" },
     { "value": "30+", "label": "REST APIs Built" },
     { "value": "4",   "label": "Team Members Led" },
     { "value": "1",   "label": "Live Production System" }
