@@ -163,18 +163,6 @@
       "id": 5,
       "index": "005",
       "tag": "Side Project",
-      "name": "Quiz Game",
-      "stack": ["React.js"],
-      "description": "Interactive timed quiz with immediate feedback, score tracking, and responsive UI across multiple topic categories.",
-      "link": "https://nishal-nm.github.io/quiz-game/",
-      "linkLabel": "Live ↗",
-      "github": "https://github.com/nishal-nm/quiz-game",
-      "private": false
-    },
-    {
-      "id": 6,
-      "index": "006",
-      "tag": "Side Project",
       "name": "Fuel Calculator",
       "stack": ["HTML", "CSS", "JavaScript"],
       "description": "A fuel cost estimator that calculates trip expenses based on distance, mileage, and fuel price.",
@@ -184,15 +172,15 @@
       "private": false
     },
     {
-      "id": 7,
-      "index": "007",
+      "id": 6,
+      "index": "006",
       "tag": "Side Project",
-      "name": "Test Memory",
+      "name": "Quiz Game",
       "stack": ["React.js"],
-      "description": "A card-matching memory game with smooth animations, responsive design, and clean game logic. Built to sharpen React skills.",
-      "link": "https://nishal-nm.github.io/memory-game/",
+      "description": "Interactive timed quiz with immediate feedback, score tracking, and responsive UI across multiple topic categories.",
+      "link": "https://nishal-nm.github.io/quiz-game/",
       "linkLabel": "Live ↗",
-      "github": "https://github.com/nishal-nm/memory-game",
+      "github": "https://github.com/nishal-nm/quiz-game",
       "private": false
     }
   ],
