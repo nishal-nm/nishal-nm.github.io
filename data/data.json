@@ -195,70 +195,69 @@
 
   "skills": [
     {
-    "category": "Backend Engineering",
-    "items": [
-    { "name": "Python",          "level": 0.92 },
-    { "name": "Django",          "level": 0.90 },
-    { "name": "Django REST",     "level": 0.88 },
-    { "name": "FastAPI",         "level": 0.78 },
-    { "name": "JWT Auth",        "level": 0.84 }
-    ]
+      "category": "Backend Engineering",
+      "items": [
+        { "name": "Python",          "level": 0.92 },
+        { "name": "Django",          "level": 0.90 },
+        { "name": "Django REST",     "level": 0.88 },
+        { "name": "FastAPI",         "level": 0.78 },
+        { "name": "JWT Auth",        "level": 0.84 }
+      ]
     },
     
     {
-    "category": "Real-Time & Async",
-    "items": [
-    { "name": "WebSockets",      "level": 0.82 },
-    { "name": "Django Channels", "level": 0.82 },
-    { "name": "Celery",          "level": 0.80 },
-    { "name": "Redis",           "level": 0.80 },
-    { "name": "Scheduled Tasks", "level": 0.76 }
-    ]
+      "category": "Real-Time & Async",
+      "items": [
+        { "name": "WebSockets",      "level": 0.82 },
+        { "name": "Django Channels", "level": 0.82 },
+        { "name": "Celery",          "level": 0.80 },
+        { "name": "Redis",           "level": 0.80 },
+        { "name": "Scheduled Tasks", "level": 0.76 }
+      ]
     },
     
     {
-    "category": "Databases & Storage",
-    "items": [
-    { "name": "MySQL",           "level": 0.85 },
-    { "name": "MinIO / S3",      "level": 0.72 },
-    { "name": "Backup Systems",  "level": 0.78 },
-    { "name": "rclone",          "level": 0.70 }
-    ]
+      "category": "Databases & Storage",
+      "items": [
+        { "name": "MySQL",           "level": 0.85 },
+        { "name": "MinIO / S3",      "level": 0.72 },
+        { "name": "Backup Systems",  "level": 0.78 },
+        { "name": "rclone",          "level": 0.70 }
+      ]
     },
     
     {
-    "category": "Infrastructure & Deployment",
-    "items": [
-    { "name": "Docker",          "level": 0.84 },
-    { "name": "Docker Compose",  "level": 0.80 },
-    { "name": "Nginx",           "level": 0.78 },
-    { "name": "Linux Server",    "level": 0.74 },
-    { "name": "Tailscale VPN",   "level": 0.65 }
-    ]
+      "category": "Infrastructure & Deployment",
+      "items": [
+        { "name": "Docker",          "level": 0.84 },
+        { "name": "Docker Compose",  "level": 0.80 },
+        { "name": "Nginx",           "level": 0.78 },
+        { "name": "Linux Server",    "level": 0.74 },
+        { "name": "Tailscale VPN",   "level": 0.65 }
+      ]
     },
     
     {
-    "category": "CI/CD & DevOps",
-    "items": [
-    { "name": "Git",               "level": 0.88 },
-    { "name": "GitHub Actions",    "level": 0.82 },
-    { "name": "CI/CD Pipelines",   "level": 0.80 },
-    { "name": "GHCR",              "level": 0.70 },
-    { "name": "Production Deployments", "level": 0.82 }
-    ]
+      "category": "CI/CD & DevOps",
+      "items": [
+        { "name": "Git",               "level": 0.88 },
+        { "name": "GitHub Actions",    "level": 0.82 },
+        { "name": "CI/CD Pipelines",   "level": 0.80 },
+        { "name": "GHCR",              "level": 0.70 },
+        { "name": "Deployments",       "level": 0.82 }
+      ]
     },
     
     {
-    "category": "Integrations & Services",
-    "items": [
-    { "name": "Razorpay",            "level": 0.78 },
-    { "name": "Meta WhatsApp API",   "level": 0.80 },
-    { "name": "SMTP Systems",        "level": 0.76 },
-    { "name": "Webhook Systems",     "level": 0.78 }
-    ]
+      "category": "Integrations & Services",
+      "items": [
+        { "name": "Razorpay",            "level": 0.78 },
+        { "name": "Meta Cloud API",      "level": 0.80 },
+        { "name": "SMTP Systems",        "level": 0.76 },
+        { "name": "Webhook Systems",     "level": 0.78 }
+      ]
     }
-    ]
-,
+  ],
 
   "marquee": [
     "Django", "Django REST Framework", "WebSockets", "Celery",
