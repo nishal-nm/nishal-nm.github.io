@@ -138,6 +138,26 @@
     {
       "id": 3,
       "index": "003",
+      "tag": "Production",
+      "name": "Backup Automation System",
+      "stack": [
+        "Django",
+        "DRF",
+        "JWT",
+        "Fernet",
+        "MySQL",
+        "Celery",
+        "SMTP"
+      ],
+      "description": "Secure multi-customer backup automation platform supporting encrypted credential storage, automated SQL dump generation, concurrent backup workers, safe job locking, failed-job recovery, and scheduled email delivery.",
+      "link": null,
+      "linkLabel": null,
+      "github": null,
+      "private": true
+    },
+    {
+      "id": 4,
+      "index": "004",
       "tag": "Final Year",
       "name": "RideLync",
       "stack": ["Python", "Django", "MySQL", "YOLOv5", "EasyOCR", "React"],
@@ -148,8 +168,8 @@
       "private": false
     },
     {
-      "id": 4,
-      "index": "004",
+      "id": 5,
+      "index": "005",
       "tag": "Side Project",
       "name": "Jarvis — Local LLM Agent",
       "stack": ["Python", "Ollama", "Playwright", "Gradio"],
@@ -160,8 +180,8 @@
       "private": true
     },
     {
-      "id": 5,
-      "index": "005",
+      "id": 6,
+      "index": "006",
       "tag": "Side Project",
       "name": "Fuel Calculator",
       "stack": ["HTML", "CSS", "JavaScript"],
@@ -172,8 +192,8 @@
       "private": false
     },
     {
-      "id": 6,
-      "index": "006",
+      "id": 7,
+      "index": "007",
       "tag": "Side Project",
       "name": "Quiz Game",
       "stack": ["React.js"],
@@ -189,11 +209,11 @@
     {
       "category": "Backend & Async",
       "items": [
-        { "name": "Python",       "level": 0.92 },
-        { "name": "Django",       "level": 0.90 },
-        { "name": "Django REST",  "level": 0.88 },
-        { "name": "Channels / WS","level": 0.82 },
-        { "name": "Celery",       "level": 0.80 }
+        { "name": "Python",        "level": 0.92 },
+        { "name": "Django",        "level": 0.90 },
+        { "name": "Django REST",   "level": 0.88 },
+        { "name": "Channels / WS", "level": 0.82 },
+        { "name": "Celery",        "level": 0.80 }
       ]
     },
     {
@@ -207,11 +227,26 @@
     {
       "category": "Infrastructure",
       "items": [
-        { "name": "Docker",       "level": 0.84 },
-        { "name": "Nginx",        "level": 0.78 },
-        { "name": "Git",          "level": 0.88 },
-        { "name": "Linux Server", "level": 0.74 },
-        { "name": "Razorpay",     "level": 0.78 }
+        { "name": "Docker",          "level": 0.84 },
+        { "name": "Docker Compose",  "level": 0.80 },
+        { "name": "GHCR",            "level": 0.70 },
+        { "name": "CI/CD Pipelines", "level": 0.80 },
+        { "name": "Tailscale VPN",   "level": 0.65 },
+        { "name": "rclone",          "level": 0.70 },
+        { "name": "Nginx",           "level": 0.78 },
+        { "name": "Git",             "level": 0.88 },
+        { "name": "Linux Server",    "level": 0.74 },
+        { "name": "Razorpay",        "level": 0.78 }
+      ]
+    },
+    {
+      "category": "CI/CD & Integrations",
+      "items": [
+        { "name": "GitHub Actions",    "level": 0.82 },
+        { "name": "FastAPI",           "level": 0.78 },
+        { "name": "JWT Auth",          "level": 0.84 },
+        { "name": "Meta WhatsApp API", "level": 0.80 },
+        { "name": "SMTP Systems",      "level": 0.76 }
       ]
     }
   ],
@@ -219,20 +254,21 @@
   "marquee": [
     "Django", "Django REST Framework", "WebSockets", "Celery",
     "Redis", "Docker", "Nginx", "MySQL", "Razorpay", "MinIO",
-    "Python", "REST APIs"
+    "Python", "REST APIs","FastAPI", "CI/CD","GitHub Actions", 
+    "JWT Auth", "Meta WhatsApp API", "Docker Compose"
   ],
 
   "languages": [
-    { "name": "Malayalam", "level": "Native",        "stars": 5 },
-    { "name": "English",   "level": "Intermediate",  "stars": 4 },
+    { "name": "Malayalam", "level": "Native",         "stars": 5 },
+    { "name": "English",   "level": "Intermediate",   "stars": 4 },
     { "name": "Tamil",     "level": "Conversational", "stars": 2 },
     { "name": "Hindi",     "level": "Basic",          "stars": 1 }
   ],
 
   "stats": [
-    { "value": "11mo", "label": "Industry Experience" },
     { "value": "30+", "label": "REST APIs Built" },
-    { "value": "4",   "label": "Team Members Led" },
-    { "value": "1",   "label": "Live Production System" }
+    { "value": "4", "label": "Team Members Led" },
+    { "value": "3", "label": "Production Systems" },
+    { "value": "24/7", "label": "Live Infrastructure Maintained" }
   ]
 }
