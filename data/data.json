@@ -190,18 +190,6 @@
       "linkLabel": "Live ↗",
       "github": "https://github.com/nishal-nm/fuel-calculator",
       "private": false
-    },
-    {
-      "id": 7,
-      "index": "007",
-      "tag": "Side Project",
-      "name": "Quiz Game",
-      "stack": ["React.js"],
-      "description": "Interactive timed quiz with immediate feedback, score tracking, and responsive UI across multiple topic categories.",
-      "link": "https://nishal-nm.github.io/quiz-game/",
-      "linkLabel": "Live ↗",
-      "github": "https://github.com/nishal-nm/quiz-game",
-      "private": false
     }
   ],
 
